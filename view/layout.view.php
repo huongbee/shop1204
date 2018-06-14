@@ -5,14 +5,15 @@
   <!-- Basic page needs -->
   <meta charset="utf-8">
   <!--[if IE]>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <![endif]-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <![endif]-->
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>MyStore premium HTML5 &amp; CSS3 template</title>
   <meta name="description" content="best template, template free, responsive theme, fashion store, responsive theme, responsive html theme, Premium website templates, web templates, Multi-Purpose Responsive HTML5 Template">
   <meta name="keywords" content="bootstrap, ecommerce, fashion, layout, responsive, responsive template, responsive template download, responsive theme, retail, shop, shopping, store, Premium website templates, web templates, Multi-Purpose Responsive HTML5 Template"
   />
-  <!-- Mobile specific metas  , -->
+
+  <!-- Mobile specific metas  -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Favicon  -->
@@ -35,7 +36,6 @@
   <!-- owl.carousel CSS -->
   <link rel="stylesheet" type="text/css" href="public/css/owl.carousel.css">
   <link rel="stylesheet" type="text/css" href="public/css/owl.theme.css">
-  <link rel="stylesheet" type="text/css" href="public/css/owl.transitions.css">
 
   <!-- animate CSS  -->
   <link rel="stylesheet" type="text/css" href="public/css/animate.css" media="all">
@@ -47,14 +47,18 @@
   <link rel="stylesheet" type="text/css" href="public/css/jquery-ui.css">
 
   <!-- Revolution Slider CSS -->
-  <link href="public/css/revolution-slider.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="public/css/revolution-slider.css">
 
   <!-- style CSS -->
   <link rel="stylesheet" type="text/css" href="public/css/style.css" media="all">
+
+
 </head>
 
-<body class="cms-index-index cms-home-page">
-
+<body class="shop_grid_page">
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
   <!-- mobile menu -->
   <div id="mobile-menu">
     <ul>
@@ -74,7 +78,6 @@
   </div>
   <!-- end mobile menu -->
   <div id="page">
-
     <!-- Header -->
     <header>
       <div class="header-container">
@@ -518,7 +521,7 @@
                 </li>
                 <li class="mt-root">
                   <div class="mt-root-item">
-                    <a href="contact_us.html">
+                    <a href="shop_grid.html">
                       <div class="title title_font">
                         <span class="title-text">Contact Us</span>
                       </div>
@@ -552,6 +555,7 @@
     <!-- end nav -->
 
     <?php include_once "view/$nameView.view.php"?>
+    
     
     <!-- Footer -->
 
@@ -721,7 +725,7 @@
       <div class="footer-coppyright">
         <div class="container">
           <div class="row">
-            <div class="col-sm-6 col-xs-12 coppyright"> Copyright © 2018 MyStore. Edit by 
+            <div class="col-sm-6 col-xs-12 coppyright"> Copyright © 2018 MyStore. Edit by
               <a href="https://www.facebook.com/huongnguyen.nh"> Huong </a>. All Rights Reserved. </div>
             <div class="col-sm-6 col-xs-12">
               <div class="payment">
@@ -754,12 +758,9 @@
       </div>
     </footer>
     <a href="#" class="totop"> </a>
-    <!-- End Footer -->
-
   </div>
 
-
-  <!-- JS -->
+  <!-- End Footer -->
 
   <!-- jquery js -->
   <script type="text/javascript" src="public/js/jquery.min.js"></script>
@@ -819,6 +820,10 @@
         });
     });
   </script>
+
+
+
 </body>
+
 
 </html>
