@@ -3,5 +3,9 @@ RewriteEngine On
 RewriteRule ^([a-zA-Z0-9-]+)$ type.php?url=$1
 
 
+RewriteRule ^/?public\/htaccess.txt$ - [F,L]
+#123456767r
 ErrorDocument 404 /shop1204/404.html
 ErrorDocument 500 /shop1204/404.html
+ErrorDocument 403 /shop1204/404.html
+#Deny from all
