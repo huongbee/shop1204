@@ -3,7 +3,9 @@ require_once 'DBConnect.php';
 class BaseModel extends DBConnect{
 
     function getCategories(){
-        $sql = "SELECT * FROM categories";
+        $sql = "SELECT c.*, u.url FROM categories c
+                INNER JOIN page_url u
+                ON c.id_url = u.id";
         return $this->loadMoreRows($sql);
     }
 }
