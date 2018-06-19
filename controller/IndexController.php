@@ -8,11 +8,13 @@ class IndexController extends Controller{
         $model = new IndexModel;
         $slide = $model->getSlide();
         $specialProducts = $model->selectSpecialProducts();
+        $bestSellers = $model->selectBestSeller();
 
         //print_r($specialProducts); die;
         $data = [
             'slide'=>$slide,
-            'specialProducts'=>$specialProducts
+            'specialProducts'=>$specialProducts,
+            'bestSellers'=>$bestSellers
         ];
         return $this->loadView('index',$data);
     }
