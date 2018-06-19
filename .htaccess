@@ -1,7 +1,10 @@
 RewriteEngine On
 
 RewriteRule ^([a-zA-Z0-9-]+)$ type.php?url=$1
+RewriteRule ^([a-zA-Z0-9-\(\)]+)-([0-9]+).html$ detail.php?url=$1&id=$2
 
+# \ dac biet -> binh thuong  \)
+#regex
 
 RewriteRule ^/?public\/htaccess.txt$ - [F,L]
 #123456767r

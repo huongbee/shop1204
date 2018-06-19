@@ -7,11 +7,12 @@ class IndexController extends Controller{
     function index(){
         $model = new IndexModel;
         $slide = $model->getSlide();
-        $name = "Huong";
-        
+        $specialProducts = $model->selectSpecialProducts();
+
+        //print_r($specialProducts); die;
         $data = [
             'slide'=>$slide,
-            'name'=>$name
+            'specialProducts'=>$specialProducts
         ];
         return $this->loadView('index',$data);
     }
